@@ -261,7 +261,8 @@ GET /groups/@me
     "startIndex": 0,
     "totalResults": 2,
     "itemsPerPage": 2,
-    "entry": [
+    "entry":
+    [
         {
             id: 'geant_identityfederations',
             voot_membership_role: 'owner'
@@ -291,10 +292,11 @@ GET /people/@me/geant_identityfederations
     "startIndex": 0,
     "totalResults": 2,
     "itemsPerPage": 2,
-    "entry" : [
+    "entry" : 
+    [
         {
             displayName: 'Andreas Akre Solberg',
-            emails: ['andreas@uninett.no', 'andreas.solberg@uninett.no'],
+            emails: ['andreas@uninett.no','andreas.solberg@uninett.no'],
             voot_membership_role: 'admin'
         },
         {

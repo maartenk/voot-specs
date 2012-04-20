@@ -75,7 +75,7 @@
       </address>
     </author>
 
-    <date month="December" year="2011" />
+    <date month="April" year="2012" />
 
     <abstract>
       <t>The VOOT (Virtual Organization Orthogonal Technology) protocol is a
@@ -151,7 +151,7 @@
 
             <t>filterOp</t>
 
-            <t>filterValute</t>
+            <t>filterValue</t>
 
             <t>sortOrder</t>
 
@@ -257,16 +257,21 @@
           	<![CDATA[   
 GET /groups/@me
 
-[
-    {
-        id: 'geant_identityfederations',
-        voot_membership_role: 'owner'
-    },
-    {
-        id: 'refeds',
-        voot_membership_role: 'member'
-    }
-]
+{
+    "startIndex": 0,
+    "totalResults": 2,
+    "itemsPerPage": 2,
+    "entry": [
+        {
+            id: 'geant_identityfederations',
+            voot_membership_role: 'owner'
+        },
+        {
+            id: 'refeds',
+            voot_membership_role: 'member'
+        }
+    ]
+}
          	]]>
           	</artwork></figure></t>
           	</section>
@@ -282,18 +287,23 @@ GET /groups/@me
           	<![CDATA[         	
 GET /people/@me/geant_identityfederations
 
-[
-    {
-        displayName: 'Andreas Akre Solberg',
-        emails: ['andreas@uninett.no', 'andreas.solberg@uninett.no'],
-        voot_membership_role: 'admin'
-    },
-    {
-        displayName: 'Leif Johansson',
-        emails: ['leif@sunet.se'],
-        voot_membership_role: 'manager'
-    }
-]
+{
+    "startIndex": 0,
+    "totalResults": 2,
+    "itemsPerPage": 2,
+    "entry" : [
+        {
+            displayName: 'Andreas Akre Solberg',
+            emails: ['andreas@uninett.no', 'andreas.solberg@uninett.no'],
+            voot_membership_role: 'admin'
+        },
+        {
+            displayName: 'Leif Johansson',
+            emails: ['leif@sunet.se'],
+            voot_membership_role: 'manager'
+        }
+    ]
+}
          	]]>
           	
           	</artwork></figure></t>
